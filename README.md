@@ -1,5 +1,23 @@
 # 👋🏼 What is `learn-web3-dapp`?
 
+# This is a solved version. Original version available at learn.figment.io
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 We made this decentralized application (dApp) to help developers learn about Web 3 protocols.
 
 It's a Next.js app that uses React, TypeScript and various smart contract languages (mostly Solidity and Rust).
