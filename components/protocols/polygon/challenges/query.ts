@@ -12,10 +12,11 @@ const query = async () => {
     });
 
     // TODO: Define the variables below
-    const chainId = undefined;
-    const blockHeight = undefined;
-    const gasPriceAsGwei = undefined;
-    const blockInfo = undefined;
+    const chainId = await provider.network.chainId;
+    const blockHeight = await provider.getBlockNumber();
+    const gasPrice = await provider.getGasPrice();
+    const gasPriceAsGwei = ethers.utils.formatUnits(gasPrice, 'gwei');
+    const blockInfo = await provider.getBlockWithTransactions(blockHeight);
 
     if (!chainId || !blockHeight || !gasPriceAsGwei || !blockInfo) {
       throw new Error('Please complete the code');
